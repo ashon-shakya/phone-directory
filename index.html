@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TypeScript Phone Directory</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+    </head>
+    <body>
+        <div class="directory-container">
+            <h1>
+                <img src="./assets/images/directory-logo.jpg" /> Phone Directory
+            </h1>
+
+            <div class="directory-form">
+                <input type="text" id="name-input" placeholder="Name" />
+                <input
+                    type="number"
+                    id="phone-input"
+                    placeholder="Phone number"
+                />
+                <button onclick="addContact()">Add</button>
+            </div>
+            <div class="directory-list">
+                <ul id="contact-list"></ul>
+            </div>
+            <script src="main.js"></script>
+        </div>
+    </body>
+</html>
