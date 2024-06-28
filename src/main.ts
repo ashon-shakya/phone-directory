@@ -75,8 +75,12 @@ function updateContact(id: number) {
     const addButton: HTMLButtonElement = document.getElementById(
       "add-button"
     ) as HTMLButtonElement;
+    const resetButton: HTMLButtonElement = document.getElementById(
+      "reset-button"
+    ) as HTMLButtonElement;
 
     updateButton.classList.remove("hidden");
+    resetButton.classList.remove("hidden");
     addButton.classList.add("hidden");
 
     idInput.value = contact.id.toString();
@@ -109,8 +113,12 @@ function updateContactData() {
     const addButton: HTMLButtonElement = document.getElementById(
       "add-button"
     ) as HTMLButtonElement;
+    const resetButton: HTMLButtonElement = document.getElementById(
+      "reset-button"
+    ) as HTMLButtonElement;
 
     updateButton.classList.add("hidden");
+    resetButton.classList.add("hidden");
     addButton.classList.remove("hidden");
 
     nameInput.value = "";
@@ -125,6 +133,33 @@ function updateContactData() {
 
     renderContacts();
   }
+}
+
+function resetInputForm() {
+  const idInput: HTMLInputElement = document.getElementById('id-input') as HTMLInputElement;
+  const nameInput: HTMLInputElement = document.getElementById('name-input') as HTMLInputElement;
+  const phoneInput: HTMLInputElement = document.getElementById('phone-input') as HTMLInputElement;
+
+  idInput.value = '';
+  nameInput.value = '';
+  phoneInput.value = '';
+
+  const updateButton: HTMLButtonElement = document.getElementById(
+    "update-button"
+  ) as HTMLButtonElement;
+  const addButton: HTMLButtonElement = document.getElementById(
+    "add-button"
+  ) as HTMLButtonElement;
+
+  const resetButton: HTMLButtonElement = document.getElementById(
+    "reset-button"
+  ) as HTMLButtonElement;
+
+  updateButton.classList.add("hidden");
+  resetButton.classList.add("hidden");
+  addButton.classList.remove("hidden");
+
+
 }
 
 function renderContacts() {

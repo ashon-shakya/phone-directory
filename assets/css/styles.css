@@ -93,11 +93,23 @@ body {
 .directory-list {
     ul {
         list-style-type: none;
-        height: auto;
-        padding: 15px 6px;
-        max-height: 400px;
+        height: 300px;
+        padding: 15px 15px;
         overflow-x: hidden;
         margin: 0px;
+        background: #ffffff52;
+        margin-top: 15px;
+    }
+
+    /* WebKit browsers */
+    ul::-webkit-scrollbar {
+        width: 5px;
+    }
+    ul::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ul::-webkit-scrollbar-thumb {
+        background: #7380b9;
     }
 
     li {
