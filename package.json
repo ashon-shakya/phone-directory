@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  },
+  "name": "typescript-demo",
+  "description": "This is a simple Phone Directory project built using TypeScript, HTML, and CSS. The project allows users to add, view, and search contacts in a phone directory.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server",
+    "build": "tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

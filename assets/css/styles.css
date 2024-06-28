@@ -1,3 +1,13 @@
+:root {
+    --primary-color: #79625e;
+    --accent-color: #efba1c;
+    --accent-color-2: green;
+    --hover-color: #f0d070;
+    --hover-color-2: rgb(29, 202, 29);
+    --highlight-color: #ffcc00;
+    --error-color: rgb(202, 92, 92);
+}
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -28,27 +38,55 @@ body {
             width: 50px;
         }
     }
+
+    h2 {
+        font-family: monospace;
+        font-size: 15px;
+        text-align: left;
+        color: rgb(179, 179, 179);
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
 }
 
 .directory-form {
-    input {
-        margin: 5px;
-        padding: 5px;
-        width: 130px;
-        border-radius: 5px;
-        border: 0px;
-        padding: 9px;
-        color: #222222;
+    .directory-input {
+        width: 100%;
+        margin-bottom: 10px;
+        input {
+            padding: 5px;
+            width: 177px;
+            border-radius: 5px;
+            border: 0px;
+            padding: 10px;
+            color: #222222;
+        }
     }
 
-    button {
-        margin: 5px;
-        padding: 10px 10px;
-        width: 60px;
-        border-radius: 30px;
-        border: 0px;
-        cursor: pointer;
-        background: #fffb6f;
+    .directory-submit {
+        margin-top: 5px;
+        button {
+            padding: 10px 10px;
+            width: 80px;
+            border: 0px;
+            cursor: pointer;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        button.add {
+            background: #fffb6f;
+        }
+
+        button.update {
+            background: #18ed18;
+            color: white;
+        }
+
+        .hidden {
+            display: none;
+        }
     }
 }
 
@@ -59,6 +97,7 @@ body {
         padding: 15px 6px;
         max-height: 400px;
         overflow-x: hidden;
+        margin: 0px;
     }
 
     li {
@@ -86,6 +125,16 @@ body {
     button.delete {
         margin-left: 10px;
         background: #ff6d6d;
+        color: white;
+        border: 0px;
+        border-radius: 10px;
+        padding: 5px 15px;
+        cursor: pointer;
+    }
+
+    button.update {
+        margin-left: 10px;
+        background: #18ed18;
         color: white;
         border: 0px;
         border-radius: 10px;

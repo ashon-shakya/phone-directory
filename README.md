@@ -6,9 +6,9 @@ This is a simple Phone Directory project built using TypeScript, HTML, and CSS. 
 
 The project consists of the following files:
 
-- `index.html`: The main HTML file that contains the structure of the phone directory application.
-- `styles.css`: The CSS file that styles the phone directory application.
-- `main.ts`: The TypeScript file that contains the logic for the phone directory application.
+-   `index.html`: The main HTML file that contains the structure of the phone directory application.
+-   `styles.css`: The CSS file that styles the phone directory application.
+-   `src`: The Folder contains TypeScript file that contains the logic for the phone directory application.
 
 ## Getting Started
 
@@ -18,8 +18,8 @@ Follow these instructions to set up and run the project on your local machine.
 
 Ensure you have the following installed on your system:
 
-- [Node.js](https://nodejs.org/en/download/)
-- [TypeScript](https://www.typescriptlang.org/)
+-   [Node.js](https://nodejs.org/en/download/)
+-   [TypeScript](https://www.typescriptlang.org/)
 
 ### Installation
 
@@ -44,3 +44,4 @@ To compile the TypeScript file to JavaScript, run the following command in the p
 
 ```bash
 tsc
+```
